@@ -22,7 +22,7 @@ class RTBService {
       if (response.isInstanceOf[BidResponse]) {
         response
       } else {
-        throw new IllegalStateException("Boom!")
+        throw new IllegalStateException("No Content!")
       }
   }
 

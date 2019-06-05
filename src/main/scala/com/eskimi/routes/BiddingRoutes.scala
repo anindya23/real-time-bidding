@@ -24,7 +24,7 @@ class BiddingRoutes extends BidRequestProtocol with HttpServerProtocol with BidR
           logger.info(s"Sending Bid Request = $bidRquest")
           onComplete(service.processRequest(bidRquest)) {
             case Success(response) => complete(StatusCodes.OK, response)
-            case Failure(ex) => complete(StatusCodes.NoContent, s"No Content")
+            case Failure(ex) => complete(StatusCodes.NoContent, s"${ex.getMessage}")
           }
         }
       } ~ delete {
