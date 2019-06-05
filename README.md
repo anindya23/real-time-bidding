@@ -1,4 +1,5 @@
 ### Real-Time-Bidding (RTB Project with Scala & Akka)
+URL: <http://127.0.0.1:9090/bidding>
 #### Sample Bid Request with Status Code 200
 ```
 {

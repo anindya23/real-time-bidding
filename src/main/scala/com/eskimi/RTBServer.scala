@@ -39,7 +39,7 @@ object RTBServer extends App with LazyLogging {
   
   httpServerFuture.onComplete {
     case Success(binding) =>
-      logger.info(s"Akka Http Server is UP and is bound to ${binding.localAddress}")
+      logger.info(s"RTB Http Server is UP and is bound to ${binding.localAddress}")
 
     case Failure(e) =>
       logger.error(s"Akka Http server failed to start", e)
