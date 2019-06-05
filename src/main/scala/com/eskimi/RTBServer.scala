@@ -42,7 +42,7 @@ object RTBServer extends App with LazyLogging {
       logger.info(s"RTB Http Server is UP and is bound to ${binding.localAddress}")
 
     case Failure(e) =>
-      logger.error(s"Akka Http server failed to start", e)
+      logger.error(s"RTB Http server failed to start", e)
       actorSystem.terminate()
   }
 }
